@@ -1,0 +1,59 @@
+.line-one,.line-two{
+    width: 23%;
+    height: 2px;
+    border:1px solid rgba(39, 39, 39, 0.582)
+}
+.card-title{
+    margin-top: -12px;
+}
+.socialLink span{
+    margin: 5px;
+    width:90px;
+    cursor: pointer;
+}
+.socialLink .fab{
+    font-size: 25px;
+    padding: 15px;
+    color:rgba(0, 0, 0, 0.897)
+}
+.follow-one,.follow-two{
+    width: 20%;
+    height: 2px;
+    border:1px solid rgba(39, 39, 39, 0.582)
+}
+
+@media screen and (max-width:1160px){
+    .card,.card-body{
+        padding: 25px 15px !important;
+    }
+   
+}
+
+
+
+@media screen and (max-width:960px){
+    .card,.card-body{
+        padding: 25px 10px !important;
+    }
+    .line-one,.line-two{
+        width: 15%;
+        height: 2px;
+        border:1px solid rgba(39, 39, 39, 0.582)
+    }
+    .follow-one,.follow-two{
+        width: 15%;
+    }
+    .card-title{
+        font-size: 16px !important;
+    }
+  
+    .socialLink span{
+        margin: 5px;
+        width:80px;
+       
+    }
+    .socialLink .fab{
+        padding: 15px;
+        
+    }
+}

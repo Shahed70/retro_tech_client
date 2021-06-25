@@ -1,0 +1,30 @@
+.all-post img{
+    width: 100%;
+    border-radius: 7px;
+}
+.post_info .post-cats{
+      display: flex;
+      justify-content: center;  
+}
+.post_info .post-cats .postCat{
+    margin: 10px 6px;
+    color:lightgray
+}
+
+.post_info .dateTime{
+    display:block;
+    text-align: center;
+    font-size: 11px;
+    font-style: italic;
+    margin: 10px;
+}
+.post_info p{
+    line-height: 24px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    font-size: 17px;
+    margin: 10px 0;
+}

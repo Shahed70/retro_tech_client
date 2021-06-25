@@ -1,0 +1,13 @@
+.post-img img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.singlePost_description{
+    line-height: 25px;
+    text-align: justify;
+}
+.postDescription::first-letter{
+    font-size: 50px;
+    margin-left: 15px;
+}

@@ -1,0 +1,8 @@
+.login-btn{
+    width: 100%;
+    padding: 10px 0;
+}
+.login .register{
+    cursor: pointer;
+    color: blue;
+}

@@ -1,25 +1,42 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
 
-function App() {
+import TopHeader from './components/Header/TopHeader';
+import TopNavbar from './components/Header/TopNavbar';
+import Home from './components/Home/Home';
+import SinglePost from './components/SinglePost/SinglePost';
+import TopBanner from './components/TopBanner/TopBanner';
+import Write from './components/AddPost/Write';
+import Login from './components/Login/Login';
+import { Route, Switch } from 'react-router-dom';
+const App = () => {
+  const user = false;
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+      {/* <TopHeader/>
+        <TopNavbar/>
+         <TopBanner/> */}
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route  path="/login">
+          {user ? <Home/>: <Login />}
+        </Route>
+        <Route  path="/singlepost/:postId">
+          <SinglePost />
+        </Route>
+        <Route  path="/write">
+        <Write/>
+        </Route>
+      </Switch>
+
+
+      {/* <SinglePost/> */}
+      {/*  */}
+      {/* <Login/> */}
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
