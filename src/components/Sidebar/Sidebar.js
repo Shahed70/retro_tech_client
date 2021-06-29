@@ -3,12 +3,12 @@ import './Sidebar.css'
 const Sidebar = () => {
     return (
 
-        <div className="col-md-4 sidebar">
+        <div className="sidebar">
             <div className="">
                 <div className="card card-body sidebar-card px-5 pt-5">
                     <div className="d-flex justify-content-center pt-2">
                         <div className="line-one"></div>
-                        <h5 class="card-title mx-1">ABOUT ME</h5>
+                        <h5 className="card-title mx-1">ABOUT ME</h5>
                         <div className="line-two"></div>
                     </div>
                     <p className="card-text text-justify"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit eaque ullam aperiam laudantium aliquid magni suscipit accusantium perferendis, vero blanditiis iusto natus et velit temporibus debitis fugit ex quibusdam ratione ......</p>
@@ -21,7 +21,7 @@ const Sidebar = () => {
                     <div className="card card-body sidebar-card px-5 py-5">
                         <div className="d-flex justify-content-center pt-2">
                             <div className="line-one"></div>
-                            <h5 class="card-title mx-1">CATEGORIES</h5>
+                            <h5 className="card-title mx-1">CATEGORIES</h5>
                             <div className="line-two"></div>
                         </div>
                         <div className="categories pt-3">
@@ -43,7 +43,7 @@ const Sidebar = () => {
                     <div className="card card-body sidebar-card px-5 py-5">
                         <div className="d-flex justify-content-center pt-2">
                             <div className="follow-one"></div>
-                            <h5 class="card-title mx-1">FOLLOW US</h5>
+                            <h5 className="card-title mx-1">FOLLOW US</h5>
                             <div className="follow-two"></div>
                         </div>
                         <div className="socialLink pt-3">

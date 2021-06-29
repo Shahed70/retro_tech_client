@@ -1,0 +1,39 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+.pageNumbers {
+    list-style: none;
+    display: flex;
+  }
+  
+  .pageNumbers li {
+    padding:5px 10px;
+    border: 1px solid #000;
+    cursor: pointer;
+  }
+  
+  .pageNumbers li.active {
+    background-color: red;
+    color: #fff
+  }
+  
+  .pageNumbers li button {
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  .pageNumbers li button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  .loadmore {
+    padding: 1rem;
+    color: black;
+    font-size: 1.2rem;
+    border: 1px solid #000;
+    cursor: pointer;
+  }

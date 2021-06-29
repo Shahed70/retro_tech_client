@@ -1,41 +1,32 @@
-import React from 'react';
-
-import TopHeader from './components/Header/TopHeader';
-import TopNavbar from './components/Header/TopNavbar';
+import React, { useState, createContext } from 'react';
 import Home from './components/Home/Home';
 import SinglePost from './components/SinglePost/SinglePost';
-import TopBanner from './components/TopBanner/TopBanner';
 import Write from './components/AddPost/Write';
 import Login from './components/Login/Login';
+import PrivateRoute from './PrivateRoute';
 import { Route, Switch } from 'react-router-dom';
-const App = () => {
-  const user = false;
-  return (
-    <div>
 
-      {/* <TopHeader/>
-        <TopNavbar/>
-         <TopBanner/> */}
+export const CreactUserContext = createContext()
+const App = () => {
+  const [loggedInUser, setLoggedInUser] = useState({})
+  //console.log(loggedInUser);
+  return (
+    <CreactUserContext.Provider value={[loggedInUser, setLoggedInUser]}>
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route  path="/login">
-          {user ? <Home/>: <Login />}
+        <Route exact path="/login">
+           <Login/>
         </Route>
-        <Route  path="/singlepost/:postId">
+        <Route exact path="/singlepost/:postId">
           <SinglePost />
         </Route>
-        <Route  path="/write">
-        <Write/>
-        </Route>
+        <PrivateRoute exact path="/write">
+          <Write />
+        </PrivateRoute>
       </Switch>
-
-
-      {/* <SinglePost/> */}
-      {/*  */}
-      {/* <Login/> */}
-    </div>
+    </CreactUserContext.Provider>
   )
 }
 

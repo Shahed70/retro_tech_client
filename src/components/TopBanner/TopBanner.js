@@ -9,7 +9,7 @@ import {
 
 function TopBanner() {
   return (
-    <Container fluid className="top_banner">
+    <Container fluid="true" className="top_banner">
       <Carousel fade>
         <Carousel.Item>
           <img

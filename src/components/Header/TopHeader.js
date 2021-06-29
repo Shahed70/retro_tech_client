@@ -13,7 +13,7 @@ import logo from '../../assets/image/RetroTech1.png';
 
 const TopHeader = () => {
   return (
-    <div fluid className="headr_top" bg="light">
+    <div fluid="true" className="headr_top" bg="light">
       <div>
         <Row className="justify-content-between ">
           <Col sm={12} md={4} lg={4}>

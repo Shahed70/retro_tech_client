@@ -1,6 +1,6 @@
 .post-img img{
     width: 100%;
-    height: auto;
+    height: 400px;
     object-fit: cover;
 }
 .singlePost_description{
@@ -10,4 +10,11 @@
 .postDescription::first-letter{
     font-size: 50px;
     margin-left: 15px;
+}
+.loader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
 }
