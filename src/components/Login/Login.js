@@ -25,7 +25,7 @@ const Login = () => {
             "Content-type": "application/json"
           }
         }
-        const res = await axios.post('http://localhost:4000/api/auth/login', 
+        const res = await axios.post('https://shahed-blog.herokuapp.com/api/auth/login', 
         {email, password}, config)
         setLoggedInUser(res.data)
         history.replace(from);
@@ -70,7 +70,7 @@ const Login = () => {
           </div>
         </div>
       </div>
-<p className="d-none sr-only">{loggedInUser}</p>
+{/* <p className="d-none sr-only">{[loggedInUser]}</p> */}
     </div>
   );
 };

@@ -15,7 +15,7 @@ const Register = ({ setResgitered }) => {
             email:signUp.email,
             password:signUp.password
         }
-        const res = await axios.post(`http://localhost:4000/api/auth/register`, data)
+        const res = await axios.post(`https://shahed-blog.herokuapp.com/api/auth/register`, data)
         console.log(res);
     }
     return (

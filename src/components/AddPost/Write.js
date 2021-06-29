@@ -17,7 +17,7 @@ const Write = () => {
     // }
 
     const getPost = async () => {
-        const res = await axios.get('http://localhost:4000/api/posts/allPosts')
+        const res = await axios.get('https://shahed-blog.herokuapp.com/api/posts/allPosts')
         setLoader(false)
         setPosts(res.data)
     }
@@ -26,7 +26,7 @@ const Write = () => {
     }, []);
 
     const handleDeleteImage = async (id) => {
-        const res = await axios.delete(`http://localhost:4000/api/posts/${id}`)
+        const res = await axios.delete(`https://shahed-blog.herokuapp.com/api/posts/${id}`)
         if (res.status === 200) {
             alert("Post deleted success fully")
             getPost()
@@ -42,7 +42,7 @@ const Write = () => {
             }
         }
       const newPost = {title, dectn, name:user}
-      const res = await  axios.post('http://localhost:4000/api/posts/create', newPost, config)
+      const res = await  axios.post('https://shahed-blog.herokuapp.com/api/posts/create', newPost, config)
       if(res.status === 200){
           alert("Post has been created successfully")
           getPost()

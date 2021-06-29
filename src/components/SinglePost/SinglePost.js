@@ -12,7 +12,7 @@ const SinglePost = () => {
     useEffect(() => {
         const getSinglePost = async () => {
 
-            const res = await axios.get('http://localhost:4000/api/posts/' + postId)
+            const res = await axios.get('https://shahed-blog.herokuapp.com/api/posts/' + postId)
             setLoader(false)
             setPost(res.data)
         }
@@ -23,8 +23,8 @@ const SinglePost = () => {
             <TopNavbar />
             <div className="container-fluid mx-auto my-4">
                 <div className="row mx-auto">
-                    {loader ? <div class="spinner-border text-success mx-auto mt-5" style={{ width: "3rem", height: "3rem" }} role="status">
-                        <span class="sr-only">Loading...</span>
+                    {loader ? <div className="spinner-border text-success mx-auto mt-5" style={{ width: "3rem", height: "3rem" }} role="status">
+                        <span className="sr-only">Loading...</span>
                     </div> : <div className="col-md-8">
                         <div className="post-body">
                             <div className="post-img">
