@@ -7,9 +7,11 @@ const PostList = ({ posts }) => {
             {
                 posts.map(post => (
                     <div className="col-md-6 my-4 all-post" key={post._id}>
-                        <div className="post-img">
-                            <img src={post.photo} alt="" />
-                        </div>
+                        <Link to={`/singlepost/${post._id}`}>
+                            <div className="post-img">
+                                <img src={post.photo} alt="" />
+                            </div>
+                        </Link>
                         <div className="post_info">
                             <div className="post-cats">
                                 {

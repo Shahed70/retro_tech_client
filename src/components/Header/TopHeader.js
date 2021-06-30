@@ -1,7 +1,7 @@
 import './TopHeader.css';
 
 import React from 'react';
-
+import { queryValu } from '../Posts/Posts';
 import {
   Col,
   Form,
@@ -10,7 +10,6 @@ import {
 } from 'react-bootstrap';
 
 import logo from '../../assets/image/RetroTech1.png';
-
 const TopHeader = () => {
   return (
     <div fluid="true" className="headr_top" bg="light">
