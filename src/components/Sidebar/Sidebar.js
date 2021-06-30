@@ -26,14 +26,19 @@ const Sidebar = () => {
                         </div>
                         <div className="categories pt-3">
                             <div className="d-flex justify-content-center">
-                                <span className="cat-1 border p-2">Cat 1</span>
-                                <span className="cat-1 border p-2 mx-3">Cat 1</span>
-                                <span className="cat-1 border p-2">Cat 1</span>
+                                <span className="cat-1 border p-2">Lorem</span>
+                                <span className="cat-1 border p-2 ml-1">Ipsum</span>
+
                             </div>
                             <div className="d-flex justify-content-center pt-3">
-                                <span className="cat-1 border p-2">Cat 1</span>
-                                <span className="cat-1 border p-2 mx-3">Cat 1</span>
-                                <span className="cat-1 border p-2">Cat 1</span>
+                                <span className="cat-1 border p-2">Dolor</span>
+                                <span className="cat-1 border p-2 ml-1">Deleniti </span>
+
+                            </div>
+                            <div className="d-flex justify-content-center pt-3">
+                                <span className="cat-1 border p-2 ml-1">Dummuy</span>
+
+                                <span className="cat-1 border p-2 ml-1">Explic</span>
                             </div>
                         </div>
                     </div>
