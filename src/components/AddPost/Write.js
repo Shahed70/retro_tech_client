@@ -60,7 +60,7 @@ const Write = () => {
                         <div className="input-group">
                             <div className="custom-file">
                                 <input type="file" name="file" className="custom-file-input" id="inputGroupFile04" onChange={(e)=> setPhoto(e.target.files[0])} aria-describedby="inputGroupFileAddon04" />
-                                <label className="custom-file-label" htmlFor="inputGroupFile04">Choose file</label>
+                                <label className="custom-file-label" htmlFor="inputGroupFile04">Choose file(Optional)</label>
                             </div>
 
                         </div>
